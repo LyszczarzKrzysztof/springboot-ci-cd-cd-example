@@ -10,7 +10,7 @@ jobs:
           JDBC_DATABASE_USERNAME: postgres
           JDBC_DATABASE_PASSWORD: password
 
-      - image: circleci/postgres:13.0-alpine
+      - image: circleci/postgres:12.4-postgis-ram
         environment:
           POSTGRES_DB: javavideos
 
