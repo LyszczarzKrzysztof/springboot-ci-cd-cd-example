@@ -14,8 +14,8 @@ workflows:
             JDBC_DATABASE_PASSWORD: root
 
         - image: circleci/postgres:13.0-alpine
-        environment:
-          POSTGRES_DB: javavideos
+          environment:
+            POSTGRES_DB: javavideos
 
       working-directory: ~/springboot-ci-cd-cd-example
 
