@@ -5,14 +5,14 @@ jobs:
   build:
     docker:
       - image: circleci/openjdk:stretch
-          environment:
-            JDBC_DATABASE_URL: jdbc:postgresql://localhost:5432/javavideos
-            JDBC_DATABASE_USERNAME: root
-            JDBC_DATABASE_PASSWORD: root
+        environment:
+          JDBC_DATABASE_URL: jdbc:postgresql://localhost:5432/javavideos
+          JDBC_DATABASE_USERNAME: root
+          JDBC_DATABASE_PASSWORD: root
 
       - image: circleci/postgres:13.0-alpine
-          environment:
-            POSTGRES_DB: javavideos
+        environment:
+          POSTGRES_DB: javavideos
 
     working-directory: ~/springboot-ci-cd-cd-example
 
