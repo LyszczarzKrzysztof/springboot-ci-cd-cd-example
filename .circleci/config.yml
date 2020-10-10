@@ -7,8 +7,8 @@ jobs:
       - image: circleci/openjdk:stretch
         environment:
           JDBC_DATABASE_URL: jdbc:postgresql://localhost:5432/javavideos
-          JDBC_DATABASE_USERNAME: root
-          JDBC_DATABASE_PASSWORD: root
+          JDBC_DATABASE_USERNAME: postgres
+          JDBC_DATABASE_PASSWORD: password
 
       - image: circleci/postgres:13.0-alpine
         environment:
