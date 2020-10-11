@@ -8,12 +8,12 @@ jobs:
         environment:
           JDBC_DATABASE_URL: jdbc:postgresql://localhost:5432/javavideos
           JDBC_DATABASE_USERNAME: root
-          POSTGRES_PASSWORD: root
+          JDBC_DATABASE_PASSWORD: ${POSTGRES_PASSWORD}
 
       - image: circleci/postgres:12.4-postgis-ram
-        password: <%= ENV['POSTGRES_PASSWORD'] %>
         environment:
           POSTGRES_DB: javavideos
+          POSTGRES_PASSWORD: root
 
     working-directory: ~/springboot-ci-cd-cd-example
 
