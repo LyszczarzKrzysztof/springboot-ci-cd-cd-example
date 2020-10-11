@@ -7,13 +7,13 @@ jobs:
       - image: circleci/openjdk:8u265-jdk-buster-node-browsers-legacy
         environment:
           JDBC_DATABASE_URL: jdbc:postgresql://localhost:5432/javavideos
-          JDBC_DATABASE_USERNAME: root
+          JDBC_DATABASE_USERNAME: postgres
           JDBC_DATABASE_PASSWORD: ${POSTGRES_PASSWORD}
 
       - image: circleci/postgres:12.4-postgis-ram
         environment:
           POSTGRES_DB: javavideos
-          POSTGRES_PASSWORD: root
+          POSTGRES_PASSWORD: password
 
     working-directory: ~/springboot-ci-cd-cd-example
 
