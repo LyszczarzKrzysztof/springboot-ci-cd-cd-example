@@ -8,7 +8,8 @@ jobs:
         environment:
           JDBC_DATABASE_URL: jdbc:postgresql://localhost:5432/javavideos
           JDBC_DATABASE_USERNAME: root
-          POSTGRES_PASSWORD: root
+          JDBC_DATABASE_PASSWORD: root
+         - POSTGRES_PASSWORD=root
 
       - image: circleci/postgres:12.4-postgis-ram
         environment:
