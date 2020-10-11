@@ -10,7 +10,7 @@ jobs:
           JDBC_DATABASE_USERNAME: root
           POSTGRES_PASSWORD: root
 
-      - image: circleci/postgres:12.4
+      - image: circleci/postgres:12.4-postgis-ram
         environment:
           POSTGRES_DB: javavideos
 
