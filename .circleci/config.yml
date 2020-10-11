@@ -9,9 +9,9 @@ jobs:
           JDBC_DATABASE_URL: jdbc:postgresql://localhost:5432/javavideos
           JDBC_DATABASE_USERNAME: root
           POSTGRES_PASSWORD: root
-        password: <%= ENV['POSTGRES_PASSWORD'] %>
 
       - image: circleci/postgres:12.4-postgis-ram
+        password: <%= ENV['POSTGRES_PASSWORD'] %>
         environment:
           POSTGRES_DB: javavideos
 
