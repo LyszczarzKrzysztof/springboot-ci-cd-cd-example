@@ -4,3 +4,5 @@ Based on https://youtu.be/GcUrRXfRF8g.
 
 Successful install PostgreSQL from Docker image and connecting with it by Intellij.
 
+Image of `circleci/postgres:12.4-postgis-ram` verion of Postgres image caused failure build in circleci, 
+changed to 
